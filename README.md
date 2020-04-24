@@ -1,1 +1,1 @@
-# generator-ms-poc
+# generator-microservices
