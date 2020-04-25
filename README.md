@@ -7,6 +7,29 @@
 > npm install -g generator-microservices
 > yo microservices
 ```
+## Local Development Setup
+
+```
+> cd generator-microservices
+> npm install 
+> npm link
+> yo microservices
+```
+
+## Note
+
+```
+If you have some errors to run the commands above try:
+1- Remove:
+  - node_modules
+  - .yo-repository
+  - package-lock.json
+2- run:
+   > npm install -g generator-microservices
+   > cd /generator-microservices
+   > npm link
+   > yo microservices
+```
 
 ## Features
 
@@ -35,12 +58,3 @@ This will generate:
 * Spring MVC REST Controller with CRUD operations
 * Unit and Integration Tests for REST Controller
 * Flyway or Liquibase migration to create table
-
-## Local Development Setup
-
-```
-> cd generator-microservices
-> npm install 
-> npm link
-> yo microservices
-```
