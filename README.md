@@ -40,7 +40,6 @@ If you have some errors to run the commands above try:
     * Swagger UI Integration
     * Spring Data JPA integration with option to select databases like MySQL, Postgresql, MariaDB etc
     * SpringBoot Actuator configuration
-    * Integration with Config Server, Service Registry, Sleuth, Zipkin
     * TestContainers integration
     * JUnit 5 
     * Docker configuration for Application, ELK, Prometheus, Grafana
