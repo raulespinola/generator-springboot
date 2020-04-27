@@ -7,6 +7,29 @@
 > npm install -g generator-microservices
 > yo microservices
 ```
+## Local Development Setup
+
+```
+> cd generator-microservices
+> npm install 
+> npm link
+> yo microservices
+```
+
+## Note
+
+```
+If you have some errors to run the commands above try:
+1- Remove:
+  - node_modules
+  - .yo-repository
+  - package-lock.json
+2- run:
+   > npm install -g generator-microservices
+   > cd /generator-microservices
+   > npm link
+   > yo microservices
+```
 
 ## Features
 
@@ -17,7 +40,6 @@
     * Swagger UI Integration
     * Spring Data JPA integration with option to select databases like MySQL, Postgresql, MariaDB etc
     * SpringBoot Actuator configuration
-    * Integration with Config Server, Service Registry, Sleuth, Zipkin
     * TestContainers integration
     * JUnit 5 
     * Docker configuration for Application, ELK, Prometheus, Grafana
@@ -35,12 +57,3 @@ This will generate:
 * Spring MVC REST Controller with CRUD operations
 * Unit and Integration Tests for REST Controller
 * Flyway or Liquibase migration to create table
-
-## Local Development Setup
-
-```
-> cd generator-microservices
-> npm install 
-> npm link
-> yo microservices
-```
