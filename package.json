@@ -20,5 +20,8 @@
     "sinon": "7.2.5",
     "yeoman-assert": "3.1.1",
     "yeoman-test": "1.9.1"
+  },
+  "dependencies": {
+    "yeoman-generator": "^4.9.0"
   }
 }
