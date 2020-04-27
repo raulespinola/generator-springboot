@@ -57,3 +57,13 @@ This will generate:
 * Spring MVC REST Controller with CRUD operations
 * Unit and Integration Tests for REST Controller
 * Flyway or Liquibase migration to create table
+
+### Generate Entity
+Run the following command from within the generated project folder. 
+
+`myservice> yo microservices:entity Saldo`
+
+This will generate:
+* JPA entity
+* Spring Data JPA Repository
+* Service
