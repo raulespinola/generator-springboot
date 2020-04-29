@@ -17,7 +17,7 @@ module.exports = class extends BaseGenerator {
     }
 
     get initializing() {
-        this.logSuccess('Generating JPA entity, repository, service and controller');
+        this.logSuccess('Generating JPA entity, repository and service');
         return {
             validateEntityName() {
                 const context = this.context;

@@ -26,7 +26,7 @@ function prompting() {
                     ? true
                     : 'The package name you have provided is not a valid Java package name.',
             message: 'What is the default package name?',
-            default: 'co--m.mycompany.myservice'
+            default: 'com.mycompany.myservice'
         },
         {
             type: 'confirm',
@@ -54,25 +54,6 @@ function prompting() {
                 }
             ],
             default: 'postgresql'
-        },
-        {
-            type: 'checkbox',
-            name: 'features',
-            message: 'Select the features you want?',
-            choices: [
-                {
-                    value: 'eurekaClient',
-                    name: 'Register application as a Eureka Client'
-                },
-                {
-                    value: 'configClient',
-                    name: 'Register application as a Config Server client'
-                },
-                {
-                    value: 'distTracing',
-                    name: 'Enable distributed tracing using Sleuth and Zipkin'
-                }
-            ]
         },
         {
             type: 'list',

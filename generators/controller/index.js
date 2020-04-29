@@ -53,8 +53,6 @@ module.exports = class extends BaseGenerator {
         this.generateMainJavaCode(configOptions, mainJavaTemplates);
 
         const testJavaTemplates = [
-            {src: 'web/controller/ControllerTest.java', dest: 'web/controller/'+configOptions.entityName+'ControllerTest.java'},
-            {src: 'web/controller/ControllerIT.java', dest: 'web/controller/'+configOptions.entityName+'ControllerIT.java'},
         ];
         this.generateTestJavaCode(configOptions, testJavaTemplates);
     }
