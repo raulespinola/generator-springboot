@@ -1,4 +1,4 @@
-# generator-microservices
+# Generator Microservices with Jaeger Tracing - Branch
  Branch with a few changes 
 	- Entity, Service and Controller mapping in a HashMap to simulate a Rest Controller
 	- Jaeger Tracing for the Endpoints.
