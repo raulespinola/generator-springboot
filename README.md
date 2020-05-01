@@ -1,4 +1,7 @@
 # generator-microservices
+ Branch with a few changes 
+	- Entity, Service and Controller mapping in a HashMap to simulate a Rest Controller
+	- Jaeger Tracing for the Endpoints.
 
 ## How to use?
 
@@ -7,6 +10,13 @@
 > npm install -g generator-microservices
 > yo microservices
 ```
+
+## Jaeger Tracing
+
+-Use the Docker installer
+> docker run --rm -it --network=host jaegertracing/all-in-one
+
+
 ## Local Development Setup
 
 ```
@@ -50,7 +60,6 @@ Run the following command from within the generated project folder.
 `myservice> yo microservices:controller Cuenta --base-path /api/cuenta`
 
 This will generate:
-* JPA entity
 * Spring Data JPA Repository
 * Service
 * Spring MVC REST Controller with CRUD operations
@@ -60,9 +69,19 @@ This will generate:
 ### Generate Entity
 Run the following command from within the generated project folder. 
 
-`myservice> yo microservices:entity Saldo`
+`myservice> yo microservices:controllerMap Empleado --base-path /api/empleado`
 
 This will generate:
 * JPA entity
 * Spring Data JPA Repository
 * Service
+
+## Use it
+
+- Install the generator and complete with your date
+- Dont use JPA, is not complete
+- Run Jaeger Tracing
+- Create the ControllerMap
+- Use it with SwaggerUI and JaegerUI
+
+
