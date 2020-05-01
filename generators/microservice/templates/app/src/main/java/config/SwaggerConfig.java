@@ -36,7 +36,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
                 "Description of API.",
                 "API TOS",
                 "Terms of service",
-                new Contact("Team", "www.example.com", "support@example.com"),
+                new Contact("Intercorp", "www.example.com", "support@example.com"),
                 "License of API", "API license URL", Collections.emptyList());
     }
 
